@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+            crossorigin="anonymous"
+        />
+        <link rel="stylesheet" href="TypeForm.css" />
+        <title>TypeForm</title>
+    </head>
+    <body>
+        <div class="Container">
+            <div class="TypeForm">
+                <div class="TF-Section-1">
+                    <video
+                        src="pexels-kindel-media-8566672 (2160p).mp4"
+                        autoplay
+                        loop
+                        muted
+                    ></video>
+                </div>
+                <div class="TF-Section-2">
+                    <div class="TF-Section-2-Header">
+                        Love the Idea? We will contact you!
+                    </div>
+                    <div class="TF-Section-2-Body">
+                        <input
+                            type="text"
+                            class="form-control TF-Inputs"
+                            placeholder="Name"
+                            oninput="validateAlphabeticInput(this)"
+                        />
+                        <input
+                            type="email"
+                            class="form-control TF-Inputs"
+                            placeholder="name@example.com"
+                        />
+                        <button class="btn btn-primary TF-Submit">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script
+            src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+            integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+            crossorigin="anonymous"
+        ></script>
+        <script src="TypeForm.js"></script>
+    </body>
+</html>
