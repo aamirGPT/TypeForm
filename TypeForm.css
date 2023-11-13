@@ -1,8 +1,8 @@
-*{
+* {
     margin: 0;
     padding: 0;
 }
-.Container{
+.Container {
     display: flex;
     background-color: #202020;
     justify-content: center;
@@ -10,40 +10,38 @@
     padding: 100px 0;
     width: 100%;
 }
-.TypeForm{
+.TypeForm {
     display: flex;
     border-radius: 20px;
     width: 50%;
     background-color: black;
     color: white;
 }
-.TF-Section-1{
+.TF-Section-1 {
     width: 100%;
-    position: relative;
 }
-.TF-Section-1 video{
-    position: absolute;
+.TF-Section-1 video {
     width: 100%;
     height: 100%;
     border-top-left-radius: 20px;
     border-bottom-left-radius: 20px;
     object-fit: cover;
 }
-.TF-Section-2{
+.TF-Section-2 {
     width: 100%;
     padding: 5vh 2.5vw;
 }
 
-.TF-Section-2-Header{
+.TF-Section-2-Header {
     margin-bottom: 20px;
     font-size: 2vw;
 }
-.TF-Section-2-Body{
+.TF-Section-2-Body {
     display: flex;
     flex-direction: column;
     gap: 15px;
 }
-.TF-Inputs{
+.TF-Inputs {
     background-color: transparent;
     border: none;
     padding: 0;
@@ -52,19 +50,43 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.2);
     border-radius: 0;
 }
-.TF-Inputs:active{
+.TF-Inputs:active {
     outline: none !important;
     box-shadow: none;
 }
-.TF-Inputs:focus{
+.TF-Inputs:focus {
     outline: none !important;
     box-shadow: none;
     background-color: black;
     color: rgb(230, 230, 230, 0.8);
 }
-.TF-Inputs::placeholder{
+.TF-Inputs::placeholder {
     color: rgba(158, 158, 158, 0.8);
 }
-.TF-Submit{
+.TF-Submit {
     margin-top: 10px;
+}
+
+/* Mobile screen media query */
+@media (max-width: 767px) {
+    .TypeForm {
+        flex-direction: column;
+        height: 100%;
+    }
+    .TF-Section-1{
+        height: 100%;
+    }
+    .TF-Section-1 video{
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 20px;
+    }
+    .TF-Section-2{
+        padding: 20px 20px;
+    }
+    .TF-Section-2-Header{
+        margin-bottom: 5px;
+        font-size: 4vw;
+    }
+
+    /* Add more styles as needed for a better mobile experience */
 }
