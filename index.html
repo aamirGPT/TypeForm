@@ -27,20 +27,22 @@
                     <div class="TF-Section-2-Header">
                         Love the Idea? We will contact you!
                     </div>
-                    <div class="TF-Section-2-Body">
+                    <form class="TF-Section-2-Body">
                         <input
                             type="text"
                             class="form-control TF-Inputs"
                             placeholder="Name"
                             oninput="validateAlphabeticInput(this)"
+                            required
                         />
                         <input
                             type="email"
                             class="form-control TF-Inputs"
                             placeholder="name@example.com"
+                            required
                         />
-                        <button class="btn btn-primary TF-Submit">Submit</button>
-                    </div>
+                        <button class="btn btn-primary TF-Submit" type="submit">Submit</button>
+                    </form>
                 </div>
             </div>
         </div>
