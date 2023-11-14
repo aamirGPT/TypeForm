@@ -67,25 +67,159 @@
     margin-top: 10px;
 }
 
+.Container2 {
+    display: flex;
+    background-color: #202020;
+    justify-content: center;
+    align-items: center;
+    padding: 100px 0;
+    width: 100%;
+}
+.TypeForm2 {
+    display: flex;
+    border-radius: 2px;
+    width: 50%;
+    background: rgb(195, 34, 34);
+    background: linear-gradient(
+        0deg,
+        rgba(195, 34, 34, 1) 0%,
+        rgba(253, 187, 45, 1) 100%
+    );
+    color: white;
+}
+.TF2-Section-1 {
+    width: 100%;
+    padding: 5vh 2.5vw;
+}
+.TF2-Section-2 {
+    width: 100%;
+    padding: 5vh 2.5vw;
+    background-color: #eef4ed;
+}
+.TF2-Section-1-Header {
+    margin-bottom: 20px;
+    font-size: 2vw;
+}
+.TF2-Section-1-Body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.TF2-Inputs {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    height: 40px;
+    color: rgba(255, 255, 255, 0.9);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 0;
+}
+.TF2-Inputs:active {
+    outline: none !important;
+    box-shadow: none;
+}
+.TF2-Inputs:focus {
+    outline: none !important;
+    box-shadow: none;
+    background-color: transparent;
+    border-bottom: #fff 2px solid;
+    color: rgb(255, 255, 255, 0.8);
+}
+.TF2-Inputs::placeholder {
+    color: rgba(255, 255, 255, 0.7);
+}
+.TF2-Submit {
+    background-color: #eef4ed;
+    margin-top: 10px;
+}
+.TF2-Submit:hover {
+    border-color: #fff;
+    margin-top: 10px;
+}
+.TF2-Section-2-Header {
+    margin-bottom: 10px;
+    font-size: 2vw;
+    color: rgb(50, 50, 50);
+    position: relative;
+    width: fit-content;
+}
+.TF2-Section-2-Header:before {
+    content: "";
+    position: absolute;
+    width: 40%;
+    height: 1px;
+    bottom: 0;
+    left: 0;
+    border-bottom: 2px solid orange;
+}
+.TF2-Section-2-Sub-Heading{
+    font-size: 13px;
+    color: rgb(80, 80, 80);
+    margin-bottom: 20px;
+}
+.TF2-Section-2-Body {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 12px;
+    color: rgb(70, 70, 70);
+}
+.Contact-1 span{
+    color: rgb(85, 85, 85);
+    font-size: 13px;
+    font-weight: bold;
+}
 /* Mobile screen media query */
 @media (max-width: 767px) {
     .TypeForm {
         flex-direction: column;
         height: 100%;
     }
-    .TF-Section-1{
+    .TF-Section-1 {
         height: 100%;
     }
-    .TF-Section-1 video{
+    .TF-Section-1 video {
         border-bottom-left-radius: 0;
         border-top-right-radius: 20px;
     }
-    .TF-Section-2{
+    .TF-Section-2 {
         padding: 20px 20px;
     }
-    .TF-Section-2-Header{
+    .TF-Section-2-Header {
         margin-bottom: 5px;
         font-size: 4vw;
+    }
+    
+    
+
+
+    .TypeForm2 {
+        flex-direction: column;
+        height: 100%;
+    }
+    .TF2-Section-1 {
+        height: 100%;
+        padding: 20px 20px;
+    }
+    .TF2-Section-1-Header {
+        height: 100%;
+        font-size: 4vw;
+    }
+    .TF2-Inputs{
+        font-size: 3.5vw;
+    }
+    .TF2-Submit{
+        font-size: 3.5vw;
+    }
+    .TF2-Section-2 {
+        padding: 20px 20px;
+    }
+    .TF2-Section-2-Header {
+        margin-bottom: 5px;
+        font-size: 4vw;
+    }
+    .Contact-1{
+        word-wrap: break-word;
     }
 
     /* Add more styles as needed for a better mobile experience */
